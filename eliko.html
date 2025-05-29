@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELIKO_VOYAGE - Voyagez sans limites</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="eliko.css">
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <ul class="list">
+                <a href="#Home" class="l2"><li>Accueil</li></a>
+                <a href="#destinations" class="l2"><li>Destinations</li></a>
+                <a href="#offres" class="l2"><li>Offres</li></a>
+                <a href="#contact" class="l2"><li>Contact</li></a>
+            </ul>
+            <form class="search-bar">
+                <input type="search" placeholder="Rechercher une destination..." id="search-input">
+                <button type="submit" class="btn"><i class="fas fa-search"></i></button>
+            </form>
+        </nav>
+    </header>
+
+    <section class="hero" id="Home">
+        <h1><i class="fas fa-plane"></i>ELIKO_VOYAGE</h1>
+        
+        <div class="hero-content">
+            <p class="P1">Voyagez sans limites, explorez sans frontières !</p>
+            
+            <div class="hero-images">
+                <img src="images/istockphoto-530568719-612x612.jpg" alt="Destination 1" class="hero-image">
+                <img src="images/istockphoto-1497396873-612x612.jpg" alt="Destination 2" class="hero-image">
+                <img src="images/destination-reve-083947.jpg" alt="Destination 3" class="hero-image">
+            </div>
+            
+            <p class="P2">
+                Bienvenue chez ELIKO_VOYAGE, votre passeport vers des destinations inoubliables ! 
+                Que ce soit pour une escapade relaxante, une aventure exaltante ou un voyage d'affaires, 
+                nous vous accompagnons à chaque étape pour vous offrir une expérience unique et sur mesure. 
+                Préparez-vous à découvrir le monde autrement !
+            </p>
+            
+            <div class="btn-container">
+                <button type="button" class="btn2" id="learn-more-btn">
+                    <i class="fas fa-info-circle"></i> En Savoir plus
+                </button>
+                <button type="button" class="btn2" id="book-now-btn">
+                    <i class="fas fa-calendar-check"></i> Réserver
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <div class="nav-icons">
+        <div class="fred">
+            <a href="#Home" class="fred1">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="Accueil">
+                <span>Accueil</span>
+            </a>
+            <a href="#destinations" class="fred1">
+                <img src="https://cdn-icons-png.flaticon.com/512/854/854878.png" alt="Destinations">
+                <span>Destinations</span>
+            </a>
+            <a href="#offres" class="fred1">
+                <img src="https://cdn-icons-png.flaticon.com/512/2173/2173478.png" alt="Offres">
+                <span>Offres</span>
+            </a>
+            <a href="#contact" class="fred1">
+                <img src="https://cdn-icons-png.flaticon.com/512/3059/3059518.png" alt="Contact">
+                <span>Contact</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Section Destinations -->
+    <section id="destinations" class="section" style="padding: 80px 20px; background-color: rgba(248, 249, 250, 0.9); color: var(--dark-color);">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 40px; font-family: 'Playfair Display', serif;">Nos Destinations Phares</h2>
+            
+            <div class="destinations-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <!-- Destination cards will be added by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Offres Spéciales -->
+    <section id="offres" class="section" style="padding: 80px 20px; background-color: rgba(42, 157, 143, 0.1);">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 40px; font-family: 'Playfair Display', serif; color: var(--secondary-color);">Nos Offres Spéciales</h2>
+            
+            <div class="offers-container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
+                <!-- Offers will be added by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="section" style="padding: 80px 20px; background-color: rgba(38, 70, 83, 0.9); color: white;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 40px; font-family: 'Playfair Display', serif;">Contactez-nous</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 50px;">
+                <div>
+                    <h3 style="margin-bottom: 20px; font-size: 1.5rem;">Envoyez-nous un message</h3>
+                    <form id="contact-form" style="display: flex; flex-direction: column; gap: 20px;">
+                        <input type="text" placeholder="Votre nom" required style="padding: 12px; border-radius: 5px; border: none;">
+                        <input type="email" placeholder="Votre email" required style="padding: 12px; border-radius: 5px; border: none;">
+                        <textarea placeholder="Votre message" rows="5" required style="padding: 12px; border-radius: 5px; border: none;"></textarea>
+                        <button type="submit" style="padding: 12px 25px; background-color: var(--accent-color); color: var(--dark-color); border: none; border-radius: 5px; font-weight: bold; cursor: pointer; transition: all 0.3s ease;">Envoyer</button>
+                    </form>
+                </div>
+                
+                <div>
+                    <h3 style="margin-bottom: 20px; font-size: 1.5rem;">Nos coordonnées</h3>
+                    <div style="display: flex; flex-direction: column; gap: 15px;">
+                        <p><i class="fas fa-map-marker-alt" style="margin-right: 10px; color: var(--accent-color);"></i> Abidjan, Côte d'Ivoire</p>
+                        <p><i class="fas fa-phone" style="margin-right: 10px; color: var(--accent-color);"></i> +225 07 67 99 83 73 / +225 05 84 03 47 57</p>
+                        <p><i class="fas fa-envelope" style="margin-right: 10px; color: var(--accent-color);"></i> Eliko_travel.world@gmail.com</p>
+                    </div>
+                    
+                    <div style="margin-top: 30px;">
+                        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">Heures d'ouverture</h3>
+                        <p>Lundi - Vendredi: 8h00 - 18h00</p>
+                        <p>Samedi: 9h00 - 15h00</p>
+                        <p>Dimanche: Fermé</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>A propos de nous</h3>
+                <p>ELIKO_VOYAGE est une agence de voyage passionnée par la création d'expériences uniques et mémorables pour nos clients à travers le monde.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens rapides</h3>
+                <ul class="list2">
+                    <li><a href="#Home">Accueil</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#offres">Offres</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> Eliko_travel.world@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +225 07 67 99 83 73</p>
+                <p><i class="fas fa-phone"></i> +225 05 84 03 47 57</p>
+            </div>
+            <div class="footer-section">
+                <h3>Suivez-nous</h3>
+                <div class="footer-icone">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <p class="footer-fin">&copy; 2025 ELIKO_VOYAGE - Tous droits réservés | Conçu avec <i class="fas fa-heart" style="color: #ff6b6b;"></i> par FK</p>
+    </footer>
+    <script src="eliko.js"></script>
+</body>
+</html>
